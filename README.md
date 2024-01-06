@@ -1,62 +1,57 @@
-# MLX Examples
-
-This repo contains a variety of standalone examples using the [MLX
-framework](https://github.com/ml-explore/mlx).
-
-The [MNIST](mnist) example is a good starting point to learn how to use MLX.
-
-Some more useful examples are listed below.
-
-### Text Models 
-
-- [Transformer language model](transformer_lm) training.
-- Large scale text generation with [LLaMA](llms/llama),
-  [Mistral](llms/mistral), [Phi-2](llms/phi2), and more in the [LLMs](llms)
-  directory.
-- A mixture-of-experts (MoE) language model with [Mixtral 8x7B](llms/mixtral).
-- Parameter efficient fine-tuning with [LoRA or QLoRA](lora).
-- Text-to-text multi-task Transformers with [T5](t5).
-- Bidirectional language understanding with [BERT](bert).
-
-### Image Models 
-
-- Generating images with [Stable Diffusion](stable_diffusion).
-
-### Audio Models
-
-- Speech recognition with [OpenAI's Whisper](whisper).
-
-### Other Models 
-
-- Semi-supervised learning on graph-structured data with [GCN](gcn).
-
-### Hugging Face
-
-Note: You can now directly download a few converted checkpoints from the [MLX
-Community](https://huggingface.co/mlx-community) organization on Hugging Face.
-We encourage you to join the community and [contribute new
-models](https://github.com/ml-explore/mlx-examples/issues/155).
-
-## Contributing 
-
-We are grateful for all of [our
-contributors](ACKNOWLEDGMENTS.md#Individual-Contributors). If you contribute
-to MLX Examples and wish to be acknowledged, please add your name to to the list in your
-pull request.
-
-## Citing MLX Examples
-
-The MLX software suite was initially developed with equal contribution by Awni
-Hannun, Jagrit Digani, Angelos Katharopoulos, and Ronan Collobert. If you find
-MLX Examples useful in your research and wish to cite it, please use the following
-BibTex entry:
-
-```
-@software{mlx2023,
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><h1 tabindex="-1" dir="auto"><a id="user-content-mlx-examples" class="anchor" aria-hidden="true" tabindex="-1" href="#mlx-examples"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MLX 示例</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库包含各种使用</font></font><a href="https://github.com/ml-explore/mlx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MLX 框架的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">独立示例。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="/ml-explore/mlx-examples/blob/main/mnist"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MNIST</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">示例</font><font style="vertical-align: inherit;">是学习如何使用 MLX 的良好起点。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下面列出了一些更有用的示例。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-text-models" class="anchor" aria-hidden="true" tabindex="-1" href="#text-models"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文本模型</font></font></h3>
+<ul dir="auto">
+<li><a href="/ml-explore/mlx-examples/blob/main/transformer_lm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Transformer 语言模型</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">训练。</font></font></li>
+<li><font style="vertical-align: inherit;"><a href="/ml-explore/mlx-examples/blob/main/llms"><font style="vertical-align: inherit;">使用LLMs目录中的</font></a></font><a href="/ml-explore/mlx-examples/blob/main/llms/llama"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LLaMA</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、
+ </font></font><a href="/ml-explore/mlx-examples/blob/main/llms/mistral"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mistral</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="/ml-explore/mlx-examples/blob/main/llms/phi2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Phi-2</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等</font><font style="vertical-align: inherit;">进行大规模文本生成</font><font style="vertical-align: inherit;">
+。</font></font><a href="/ml-explore/mlx-examples/blob/main/llms"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="/ml-explore/mlx-examples/blob/main/llms/mixtral"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">采用Mixtral 8x7B 的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">专家混合 (MoE) 语言模型</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="/ml-explore/mlx-examples/blob/main/lora"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用LoRA 或 QLoRA</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进行参数高效微调</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="/ml-explore/mlx-examples/blob/main/t5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用T5</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的文本到文本多任务 Transformer </font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="/ml-explore/mlx-examples/blob/main/bert"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用BERT</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进行双向语言理解</font><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-image-models" class="anchor" aria-hidden="true" tabindex="-1" href="#image-models"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像模型</font></font></h3>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font><a href="/ml-explore/mlx-examples/blob/main/stable_diffusion"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">稳定扩散</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生成图像。</font></font></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-audio-models" class="anchor" aria-hidden="true" tabindex="-1" href="#audio-models"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">音频模型</font></font></h3>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="/ml-explore/mlx-examples/blob/main/whisper"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用OpenAI 的 Whisper</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进行语音识别</font><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-other-models" class="anchor" aria-hidden="true" tabindex="-1" href="#other-models"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他型号</font></font></h3>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="/ml-explore/mlx-examples/blob/main/gcn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用GCN</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对图结构数据进行半监督学习</font><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-hugging-face" class="anchor" aria-hidden="true" tabindex="-1" href="#hugging-face"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">抱脸</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://huggingface.co/mlx-community" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：您现在可以直接从 Hugging Face 上的MLX 社区</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组织下载一些转换后的检查点</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">我们鼓励您加入社区并</font></font><a href="https://github.com/ml-explore/mlx-examples/issues/155" data-hovercard-type="issue" data-hovercard-url="/ml-explore/mlx-examples/issues/155/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献新模型</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-contributing" class="anchor" aria-hidden="true" tabindex="-1" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们感谢所有的</font></font><a href="/ml-explore/mlx-examples/blob/main/ACKNOWLEDGMENTS.md#Individual-Contributors"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">如果您为 MLX 示例做出贡献并希望得到认可，请将您的姓名添加到拉取请求中的列表中。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-citing-mlx-examples" class="anchor" aria-hidden="true" tabindex="-1" href="#citing-mlx-examples"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引用 MLX 示例</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MLX 软件套件最初由 Awni Hannun、Jagrit Digani、Angelos Katharopoulos 和 Ronan Collobert 共同开发。</font><font style="vertical-align: inherit;">如果您发现 MLX 示例对您的研究有用并希望引用它，请使用以下 BibTex 条目：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>@software{mlx2023,
   author = {Awni Hannun and Jagrit Digani and Angelos Katharopoulos and Ronan Collobert},
   title = {{MLX}: Efficient and flexible machine learning on Apple silicon},
   url = {https://github.com/ml-explore},
   version = {0.0},
   year = {2023},
 }
-```
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="@software{mlx2023,
+  author = {Awni Hannun and Jagrit Digani and Angelos Katharopoulos and Ronan Collobert},
+  title = {{MLX}: Efficient and flexible machine learning on Apple silicon},
+  url = {https://github.com/ml-explore},
+  version = {0.0},
+  year = {2023},
+}" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</article></div>
